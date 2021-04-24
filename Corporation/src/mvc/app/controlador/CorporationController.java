@@ -89,24 +89,7 @@ public class CorporationController extends HttpServlet {
 			request.setAttribute("ListaAn", VistaAnalista);
 			RequestDispatcher ruta = request.getRequestDispatcher("Vista/VerAn.jsp");
 			ruta.forward(request, response);
-		}
-//		else if(op.equals("EditAs")) {
-//		
-//		Procesos objProcess = new Procesos();
-//		List<Asociado> VistaAsociado = new ArrayList<>();
-//		
-//		try {
-//			VistaAsociado= objProcess.CadaAsociado(id);
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		request.setAttribute("Lista", VistaAsociado);
-//		RequestDispatcher ruta = request.getRequestDispatcher("Vista/EditAsc.jsp");
-//		ruta.forward(request, response);
-//		}
-				
+		}		
 	}
 
 	/**
@@ -116,7 +99,7 @@ public class CorporationController extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
-		//Crear una variable para Opción
+		//Crear una variable para OpciÃ³n
 		String opT=request.getParameter("opcion");
 		String id=request.getParameter("id");
 		
